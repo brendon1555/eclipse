@@ -15,11 +15,10 @@
 # limitations under the License.
 #
 import webapp2
+import eclipse.page.handlers
 
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
-        self.response.write('Hello world!')
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', eclipse.page.handlers.MainHandler),
+    ('/signup', eclipse.page.handlers.SignupHandler)
 ], debug=True)

@@ -26,7 +26,8 @@ eclipse.ui.Renderer.prototype.enterDocument = function() {
 
     var element_ = this.getElement();
 
-    console.log("Test");
+    console.log("Index");
+    
 };
 
 
