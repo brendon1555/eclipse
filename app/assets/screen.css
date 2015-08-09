@@ -1,3 +1,19 @@
 body {
     background-color: #d0e4fe;
 }
+
+.cursor_move {
+    cursor: move;
+    -moz-user-select: none;
+}
+
+.opacity_40 {
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.drag_hover_class {
+  border-color: #009900;
+  background-color: #CCFFCC;
+}
