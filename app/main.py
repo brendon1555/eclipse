@@ -16,9 +16,15 @@
 #
 import webapp2
 import eclipse.page.handlers
+import eclipse.rest.handlers
 
+import prestans.rest
 
 app = webapp2.WSGIApplication([
     ('/', eclipse.page.handlers.MainHandler),
     ('/signup', eclipse.page.handlers.SignupHandler)
 ], debug=True)
+
+api = prestans.rest.RequestRouter(routes=[
+    ('/api/note', eclipse.rest.handlers.Collection)
+], application_name="eclipse", debug=True)
