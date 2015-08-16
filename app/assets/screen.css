@@ -1,5 +1,5 @@
 body {
-    background-color: #d0e4fe;
+    background-color: #FFAE00;
 }
 
 .cursor_move {
@@ -13,7 +13,30 @@ body {
   filter: alpha(opacity=40);
 }
 
-.drag_hover_class {
+/*.drag_hover_class {
   border-color: #009900;
   background-color: #CCFFCC;
+}*/
+
+.note {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  padding: 0 22px;
+  border: 4px solid rgb(255,255,255);
+  font: normal normal bold 20px/50px Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #FFAE00;
+}
+
+.note:hover {
+  color: #FFAE00;
+  background: #ffffff;
 }

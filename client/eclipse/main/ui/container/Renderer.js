@@ -89,6 +89,7 @@ eclipse.main.ui.container.Renderer.prototype.enterDocument = function() {
             goog.iter.forEach(notes_, function(note) {
                 var vertListItem_ = this.getDomHelper().createDom(goog.dom.TagName.DIV);
                 vertListItem_.textContent = note.getNoteText();
+                goog.dom.classlist.add(vertListItem_, goog.getCssName("note"));;
                 this.getDomHelper().appendChild(vertList_, vertListItem_);
             }, this)
 
